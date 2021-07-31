@@ -9,16 +9,15 @@ function getAnswer($convertedText,$answer){
 }
 
 function checkNumbers($convertedTextArray){
-	$previousConvertedText=$convertedTextArray[$key-1];
-	return isset($previousConvertedText) &&
-	$previousConvertedText=='u1040' ||
-	$previousConvertedText=='u1041' ||
-	$previousConvertedText=='u1042' ||
-	$previousConvertedText=='u1043' ||
-	$previousConvertedText=='u1044' ||
-	$previousConvertedText=='u1045' ||
-	$previousConvertedText=='u1046' ||
-	$previousConvertedText=='u1047' ||
-	$previousConvertedText=='u1048' ||
-	$previousConvertedText=='u1049';
+	return isset($$convertedTextArray[$key-1]) &&
+	$$convertedTextArray[$key-1]=='u1040' ||
+	$$convertedTextArray[$key-1]=='u1041' ||
+	$$convertedTextArray[$key-1]=='u1042' ||
+	$$convertedTextArray[$key-1]=='u1043' ||
+	$$convertedTextArray[$key-1]=='u1044' ||
+	$$convertedTextArray[$key-1]=='u1045' ||
+	$$convertedTextArray[$key-1]=='u1046' ||
+	$$convertedTextArray[$key-1]=='u1047' ||
+	$$convertedTextArray[$key-1]=='u1048' ||
+	$$convertedTextArray[$key-1]=='u1049';
 }
