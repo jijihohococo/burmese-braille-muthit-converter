@@ -15,11 +15,11 @@ class BurmeseBrailleMuthit{
 				unset($convertedTextArray[0]);
 			}
 			foreach($convertedTextArray as $key => $convertedText){
-
-				if($convertedText=='u1031' && isset($convertedTextArray[$key-1]) ){
+				if(($convertedText=='u1031' || $convertedText=='u1031 ') && isset($convertedTextArray[$key-1]) ){
 					$convertedText= $convertedTextArray[$key-1];
 				}elseif(isset($convertedTextArray[$key+1]) &&
-					$convertedTextArray[$key+1]=='u1031' ){
+					($convertedTextArray[$key+1]=='u1031'||
+					$convertedTextArray[$key+1]=='u1031 ') ){
 					$burmeseBrailleText .= '⠱';
 					continue;
 			}
