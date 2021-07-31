@@ -21,3 +21,7 @@ function checkNumbers($convertedTextArray){
 	$$convertedTextArray[$key-1]=='u1048' ||
 	$$convertedTextArray[$key-1]=='u1049';
 }
+
+// print_r(convertCharacterToCodeArray('လေ'));
+
+// print_r(convertCharacterToCodeArray('လေ'));
