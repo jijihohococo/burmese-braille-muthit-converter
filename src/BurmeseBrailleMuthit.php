@@ -15,14 +15,19 @@ class BurmeseBrailleMuthit{
 				unset($convertedTextArray[0]);
 			}
 			foreach($convertedTextArray as $key => $convertedText){
-				if(($convertedText=='u1031' || $convertedText=='u1031 ') && isset($convertedTextArray[$key-1]) && checkForSingleThaWaiTho($convertedTextArray[$key-1])){
+				if((checkThaWaiTho($convertedText) && isset($convertedTextArray[$key-1]) && checkForSingleThaWaiTho($convertedTextArray[$key-1])) ||
+					(
+					checkForComplicatedThaWaiTho($convertedText) &&
+					isset($convertedTextArray[$key+1]) &&
+					checkThaWaiTho($convertedTextArray[$key+1])
+					)
+				  ){
 					$convertedText= $convertedTextArray[$key-1];
 				}elseif(
 					(isset($convertedTextArray[$key+1]) &&
-						($convertedTextArray[$key+1]=='u1031'||		
-							$convertedTextArray[$key+1]=='u1031 ') &&checkForSingleThaWaiTho($convertedText)) ||
+					checkThaWaiTho($convertedTextArray[$key+1]) &&checkForSingleThaWaiTho($convertedText)) ||
 					(isset($convertedTextArray[$key+1]) &&
-						checkForComplicatedThaWaiTho($convertedTextArray[$key+1]))
+					checkForComplicatedThaWaiTho($convertedTextArray[$key+1]))
 				){
 					$burmeseBrailleText .= '⠱';
 					continue;

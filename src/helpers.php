@@ -38,6 +38,10 @@ function checkForComplicatedThaWaiTho($convertedText){
 	$convertedText=='u103E';
 }
 
+function checkThaWaiTho($convertedText){
+	return ($convertedText=='u1031' || $convertedText=='u1031 ');
+}
+
 // print_r(convertCharacterToCodeArray('ကော်'));
 // print_r(convertCharacterToCodeArray('ကွေး'));
 // print_r(convertCharacterToCodeArray('ကြွေ'));
