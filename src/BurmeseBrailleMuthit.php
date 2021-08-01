@@ -20,7 +20,7 @@ class BurmeseBrailleMuthit{
 						isset($convertedTextArray[$key-1]) &&
 						checkForSingleThaWaiTho($convertedTextArray[$key-1]) &&
 						isset($convertedTextArray[$key+1]) &&
-					(checkThaWaiTho($convertedTextArray[$key+1]) || checkForComplicatedThaWaiTho($convertedTextArray[$key+1]))
+					(checkThaWaiTho($convertedTextArray[$key+1]) ||checkForComplicatedThaWaiTho($convertedTextArray[$key+1]))
 
 
 					)

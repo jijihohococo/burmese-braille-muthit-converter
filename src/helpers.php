@@ -45,3 +45,4 @@ function checkThaWaiTho($convertedText){
 // print_r(convertCharacterToCodeArray('ကော်'));
 // print_r(convertCharacterToCodeArray('ကွေး'));
 // print_r(convertCharacterToCodeArray('ကြွေ'));
+//print_r(convertCharacterToCodeArray('သင်္ကြန်'));
