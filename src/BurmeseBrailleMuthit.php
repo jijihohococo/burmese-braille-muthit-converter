@@ -360,7 +360,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠚' : '⠚');
+					checkNumbers($convertedTextArray[$key-1]) ? '⠚' : '⠼⠚' );
 				break;
 
 				case 'u1041':
@@ -368,7 +368,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠁': '⠁');
+					checkNumbers($convertedTextArray[$key-1]) ? '⠁' :  '⠼⠁');
 				break;
 
 				case 'u1042':
@@ -376,7 +376,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠃': '⠃'); 
+					checkNumbers($convertedTextArray[$key-1]) ? '⠃' : '⠼⠃' ); 
 				break;
 
 				case 'u1043':
@@ -384,7 +384,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠉': '⠉');
+					checkNumbers($convertedTextArray[$key-1]) ? '⠉' : '⠼⠉');
 				break;
 
 				case 'u1044':
@@ -392,7 +392,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠙': '⠙');
+					checkNumbers($convertedTextArray[$key-1]) ? '⠙' : '⠼⠙');
 				break;
 
 				case 'u1045':
@@ -400,7 +400,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠑': '⠑');
+					checkNumbers($convertedTextArray[$key-1]) ? '⠑' : '⠼⠑');
 				break;
 
 				case 'u1046':
@@ -408,7 +408,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠋': '⠋');
+					checkNumbers($convertedTextArray[$key-1]) ? '⠋' : '⠼⠋');
 				break;
 
 				case 'u1047':
@@ -416,7 +416,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠛': '⠛');
+					checkNumbers($convertedTextArray[$key-1]) ? '⠛' : '⠼⠛');
 				break;
 
 				case 'u1048':
@@ -424,7 +424,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠓': '⠓');
+					checkNumbers($convertedTextArray[$key-1]) ? '⠓' : '⠼⠓');
 				break;
 
 				case 'u1049':
@@ -432,7 +432,7 @@ class BurmeseBrailleMuthit{
 				$burmeseBrailleText .=getAnswer(
 					$convertedText,
 					isset($convertedTextArray[$key-1]) &&
-					checkNumbers($convertedTextArray[$key-1]) ? '⠼⠊': '⠊');
+					checkNumbers($convertedTextArray[$key-1]) ? '⠊' : '⠼⠊');
 				break;
 
 				case 'u104a':

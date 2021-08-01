@@ -8,7 +8,7 @@ if(BurmeseBrailleMuthit::convertBurmeseToBraille('ပွင့် ဖူး က�
 	echo "Testing Burmese Braille Muthit Converter with syllable breaks are passed.\n";
 }
 
-print_r(BurmeseBrailleMuthit::convertBurmeseToBraille('၁၉၂၀ပြည့်ကျောင်းသားသပိတ်ကြီးတွင်ဦးဖိုးကျားသည်ထင်ရှားသောခေါင်း‌ဆောင်တစ်ဦးဖြစ်သည်။'));
+print_r(BurmeseBrailleMuthit::convertBurmeseToBraille('၁၉၂၀'));
 
 
 //echo BurmeseBrailleMuthit::convertBurmeseToBraille('သင်္ကြန်');
