@@ -469,9 +469,6 @@ class BurmeseBrailleMuthit{
 
 				case 'u201d':
 				case 'u201d ':
-				$burmeseBrailleText .=getAnswer($convertedText,'⠴');
-				break;
-
 				case '?':
 				case '? ':
 				$burmeseBrailleText .=getAnswer($convertedText,'⠴');
@@ -485,6 +482,13 @@ class BurmeseBrailleMuthit{
 				case ']':
 				case '] ':
 				$burmeseBrailleText .=getAnswer($convertedText,'⠶⠄');
+				break;
+
+				case '(':
+				case '( ':
+				case ')':
+				case ') ':
+				$burmeseBrailleText .=getAnswer($convertedText,'⠶');
 				break;
 
 				default:
