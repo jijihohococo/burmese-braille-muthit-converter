@@ -24,18 +24,18 @@ function checkNumbers($convertedText){
 
 function checkForSingleThaWaiTho($convertedText){
 	return
-	$convertedText!=='u103B' &&
-	$convertedText!=='u103C' &&
-	$convertedText!=='u103D' && 
-	$convertedText!=='u103E';
+	$convertedText!=='u103b' &&
+	$convertedText!=='u103c' &&
+	$convertedText!=='u103d' && 
+	$convertedText!=='u103e';
 }
 
 function checkForComplicatedThaWaiTho($convertedText){
 	return
-	$convertedText=='u103B' ||
-	$convertedText=='u103C' ||
-	$convertedText=='u103D' ||
-	$convertedText=='u103E';
+	$convertedText=='u103b' ||
+	$convertedText=='u103c' ||
+	$convertedText=='u103d' ||
+	$convertedText=='u103e';
 }
 
 function checkThaWaiTho($convertedText){
