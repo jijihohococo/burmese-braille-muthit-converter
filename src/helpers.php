@@ -38,6 +38,6 @@ function checkForComplicatedThaWaiTho($convertedText){
 	$convertedText=='u103e';
 }
 
-function checkThaWaiTho($convertedText){
-	return ($convertedText=='u1031' || $convertedText=='u1031 ');
+function checkForNormalAndSpace($convertedText,$selectedText){
+	return ($convertedText==$selectedText || $convertedText==$selectedText.' ');
 }

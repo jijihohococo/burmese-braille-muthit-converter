@@ -15,12 +15,12 @@ class BurmeseBrailleMuthit{
 				unset($convertedTextArray[0]);
 			}
 			foreach($convertedTextArray as $key => $convertedText){
-				if((checkThaWaiTho($convertedText) ||
+				if((checkForNormalAndSpace($convertedText,'u1031') ||
 					(checkForComplicatedThaWaiTho($convertedText) &&
 						isset($convertedTextArray[$key-1]) &&
 						checkForSingleThaWaiTho($convertedTextArray[$key-1]) &&
 						isset($convertedTextArray[$key+1]) &&
-					(checkThaWaiTho($convertedTextArray[$key+1]) ||checkForComplicatedThaWaiTho($convertedTextArray[$key+1]))
+					(checkForNormalAndSpace($convertedTextArray[$key+1],'u1031') ||checkForComplicatedThaWaiTho($convertedTextArray[$key+1]))
 
 
 					)
@@ -28,12 +28,12 @@ class BurmeseBrailleMuthit{
 					isset($convertedTextArray[$key-1]) ){
 					$convertedText= $convertedTextArray[$key-1];
 			}elseif((isset($convertedTextArray[$key+1]) &&
-				checkThaWaiTho($convertedTextArray[$key+1])) ||
+				checkForNormalAndSpace($convertedTextArray[$key+1],'u1031')) ||
 			(checkForSingleThaWaiTho($convertedText) && 
 				isset($convertedTextArray[$key+1]) && 
 				checkForComplicatedThaWaiTho($convertedTextArray[$key+1]) &&
 				isset($convertedTextArray[$key+2]) &&
-				(checkThaWaiTho($convertedTextArray[$key+2]) ||
+				(checkForNormalAndSpace($convertedTextArray[$key+2],'u1031') ||
 					checkForComplicatedThaWaiTho($convertedTextArray[$key+2])) )
 		){
 				$burmeseBrailleText .= '⠱';
@@ -288,8 +288,8 @@ class BurmeseBrailleMuthit{
 
 				case 'u1037':
 				case 'u1037 ':
-				$burmeseBrailleText .= isset($convertedTextArray[$key+1]) &&
-				($convertedTextArray[$key+1]=='u103a' || $convertedTextArray[$key+1]=='u103a ') ? getAnswer($convertedText,'⠄') : getAnswer($convertedText,'⠂');
+				$burmeseBrailleText .= isset($convertedTextArray[$key+1]) && 
+				checkForNormalAndSpace($convertedTextArray[$key+1],'u103a') ? getAnswer($convertedText,'⠄') : getAnswer($convertedText,'⠂');
 				break;
 
 				case 'u1038':
