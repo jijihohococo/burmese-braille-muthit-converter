@@ -2,6 +2,25 @@
 <p>This library is aimed to convert Burmese Letter to Burmese Braille Muthit letters in PHP. It is aimed to convert the burmese letters which are from internet to burmese braille letters. This library is developed after reading <a href="https://jiist.aiat.or.th/assets/uploads/16195380940305LtWrJIIST-44-FinalVersion.pdf">this paper</a>.</p>
 <p>Currently, this library is able to convert from unicode only.</p>
 
+## Installing Library Via Composer
+
+<p>Firstly, you need to add some data in your repositories of composer.json as shown as below</p>
+
+```php
+"repositories": [
+        {
+            "name": "jijihohococo/burmese-braille-muthit-converter",
+            "type": "vcs",
+            "url": "git@github.com:jijihohococo/burmese-braille-muthit-converter.git"
+        }
+    ],
+```
+<p>And then, run below code in command line.</p>
+
+```php
+composer require jijihohococo/burmese-braille-muthit-converter
+```
+
 ## Usage
 <p>You can convert Burmese Letters to Burmese Braille Muthit Letters</p>
 
