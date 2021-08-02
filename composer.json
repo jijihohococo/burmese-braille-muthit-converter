@@ -9,6 +9,7 @@
 		"burmese braille muthit converter",
 		"burmese braille muthit converter for php",
 		"php"],
+	"homepage": "https://github.com/jijihohococo/burmese-braille-muthit-converter",
 	"license": "MIT",
 	"authors": [
 		{
