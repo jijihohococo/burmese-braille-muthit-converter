@@ -4,19 +4,6 @@
 
 ## Installing Library Via Composer
 
-<p>Firstly, you need to add some data in your repositories of composer.json as shown as below</p>
-
-```php
-"repositories": [
-        {
-            "name": "jijihohococo/burmese-braille-muthit-converter",
-            "type": "vcs",
-            "url": "git@github.com:jijihohococo/burmese-braille-muthit-converter.git"
-        }
-    ],
-```
-<p>And then, run below code in command line.</p>
-
 ```php
 composer require jijihohococo/burmese-braille-muthit-converter
 ```
