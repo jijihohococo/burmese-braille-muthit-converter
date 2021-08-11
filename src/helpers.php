@@ -1,5 +1,33 @@
 <?php
 
+function checkForThWaiThoCaseOne(array $convertedTextArray,string $convertedText,int $key){
+	return (checkForSingleThaWaiTho($convertedText) &&
+	isset($convertedTextArray[$key+1]) &&
+	checkForNormalAndSpace($convertedTextArray[$key+1],'u1031')) ||
+(checkForSingleThaWaiTho($convertedText) && 
+	isset($convertedTextArray[$key+1]) && 
+	checkForComplicatedThaWaiTho($convertedTextArray[$key+1]) &&
+	isset($convertedTextArray[$key+2]) &&
+	(checkForNormalAndSpace($convertedTextArray[$key+2],'u1031') ||
+	(checkForComplicatedThaWaiTho($convertedTextArray[$key+2]) && isset($convertedTextArray[$key+3],$convertedTextArray) && checkForNormalAndSpace($convertedTextArray[$key+3],'u1031')   )
+		 ) );
+
+}
+
+function checkForThWaiThoCaseTwo(array $convertedTextArray,string $convertedText,int $key){
+	return (checkForNormalAndSpace($convertedText,'u1031') ||
+	(checkForComplicatedThaWaiTho($convertedText) &&
+		isset($convertedTextArray[$key-1]) &&
+		checkForSingleThaWaiTho($convertedTextArray[$key-1]) &&
+		isset($convertedTextArray[$key+1]) &&
+		(checkForNormalAndSpace($convertedTextArray[$key+1],'u1031') ||
+		(checkForComplicatedThaWaiTho($convertedTextArray[$key+1]) && isset($convertedTextArray[$key+2]) && checkForNormalAndSpace($convertedTextArray[$key+2],'u1031') )
+		)
+		)
+	) &&
+isset($convertedTextArray[$key-1]);
+}
+
 function convertCharacterToCodeArray($alphabet){
 	return explode('\\', substr(json_encode($alphabet), 1,-1) );
 }
