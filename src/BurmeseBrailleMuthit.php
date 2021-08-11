@@ -491,8 +491,4 @@ class BurmeseBrailleMuthit{
 			return $burmeseBrailleText;
 		}
 	}
-
-	public static function convertBrailleToBurmese(string $text){
-
-	}
 }
