@@ -15,7 +15,7 @@ function checkForThWaiThoCaseOne(array $convertedTextArray,string $convertedText
 }
 
 function checkForThWaiThoCaseTwo(array $convertedTextArray,string $convertedText,int $key){
-	return (checkForNormalAndSpace($convertedText,'u1031') ||
+	return ((checkForNormalAndSpace($convertedText,'u1031') ||
 	(checkForComplicatedThaWaiTho($convertedText) &&
 		isset($convertedTextArray[$key-1]) &&
 		checkForSingleThaWaiTho($convertedTextArray[$key-1]) &&
@@ -25,7 +25,7 @@ function checkForThWaiThoCaseTwo(array $convertedTextArray,string $convertedText
 		)
 		)
 	) &&
-isset($convertedTextArray[$key-1]);
+isset($convertedTextArray[$key-1])) || (checkForNormalAndSpace($convertedText,'u103d') && isset($convertedTextArray[$key+1]) && checkForNormalAndSpace($convertedTextArray[$key+1],'u1031') );
 }
 
 function convertCharacterToCodeArray($alphabet){
