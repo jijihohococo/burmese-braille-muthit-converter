@@ -5,7 +5,7 @@
 ## Installing Library Via Composer
 
 ```php
-composer require jijihohococo/burmese-braille-muthit-converter:1.6
+composer require jijihohococo/burmese-braille-muthit-converter
 ```
 
 ## Usage
