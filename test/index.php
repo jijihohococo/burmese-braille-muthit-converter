@@ -22,3 +22,7 @@ if(BurmeseBrailleMuthit::convertBurmeseToBraille("အမြွှာ")=="⠣⠍�
 if(BurmeseBrailleMuthit::convertBurmeseToBraille("ကြွေ")=="⠱⠅⠢⠜"){
 	echo NORMAL_SUCCESS_MESSAGE;
 }
+
+if(BurmeseBrailleMuthit::convertBurmeseToBraille("ရွှေမြန်မာများရွှေ့ပြောင်းကြခြင်း")=="⠱⠗⠜⠭⠍⠢⠝⠄⠍⠁⠍⠔⠁⠆⠱⠗⠜⠭⠂⠱⠏⠢⠁⠌⠄⠆⠅⠢⠨⠢⠌⠄⠆"){
+	echo NORMAL_SUCCESS_MESSAGE;
+}
