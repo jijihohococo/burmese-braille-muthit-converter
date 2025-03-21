@@ -49,14 +49,14 @@ class BurmeseBrailleMuthit{
 						$burmeseBrailleText .=
 						isset($convertedTextArray[$key+1]) &&
 						isset($convertedTextArray[$key+2]) && 
-						$convertedTextArray[$key+1]=='u103a' &&
-						$convertedTextArray[$key+2]=='u1039' ? getAnswer($convertedText,'⠐') :
+						$convertedTextArray[$key+1] == 'u103a' &&
+						$convertedTextArray[$key+2] == 'u1039' ? getAnswer($convertedText,'⠐') :
 						((isset($convertedTextArray[$key-1]) &&
 							isset($convertedTextArray[$key+1]) &&
 							isset($convertedTextArray[$key+2]) && 
-							$convertedTextArray[$key-1]=='u104e' &&
-							$convertedTextArray[$key+1]=='u103a' &&
-							$convertedTextArray[$key+2]=='u1038')? null :getAnswer($convertedText,'⠌') );
+							$convertedTextArray[$key-1] == 'u104e' &&
+							$convertedTextArray[$key+1] == 'u103a' &&
+							$convertedTextArray[$key+2] == 'u1038')? null :getAnswer($convertedText,'⠌') );
 						break;
 
 						case 'u1005':
